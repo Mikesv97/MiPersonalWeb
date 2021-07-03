@@ -8,6 +8,12 @@
     padding-right: 2em;
 
 }
+#aboutme    {
+    height: 100vh;
+    text-align: center;
+    margin-top: 50px;
+    
+}
 
 .ml-3{
     margin-left: 3em;
@@ -22,24 +28,27 @@
     
 }
 
-nav{
+.navbar{
     background-color: white;
     border-bottom: 1px solid lightgray;
     font-weight: bold;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 100px;
 
 
 }
 
 
-.nav-item a:hover{
+.hover:hover{
     background-color:seagreen;
     color: white !important;
     border: 2px solid white;
     border-radius: 40px;
-    transition: .5s ease-in-out;
     box-shadow: 2px 1px 10px lightgray;
-    
+    text-align: center;
     margin-left: 0;
+    transition: .5s ease-in-out;
     
 }
 
