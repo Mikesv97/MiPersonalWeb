@@ -12,8 +12,9 @@
     <title>Douglas Figueroa Méndez Web</title>
   </head>
   <body>
-  <div class="container-fluid bg-dark container-main">
+  <div class="container-fluid container-main">
     <div class="row">
+      
       <div class="shadow col-md-12 col-lg-3 bg-dark menu-content d-flex justify-content-between align-items-center p-0">
         
         <!--DATOS BARRA-->
@@ -23,22 +24,22 @@
             <img src="img/mifoto.jpg" class="me-pic"/>
           </div>
           <div class="text-content">
-            <h6 class="text-uppercase shadow-sm">Douglas Figueroa <span class="text-active shadow">Méndez</span></h6>
-            <p class="sub-text"><span class="text-active shadow">Junior</span> Developer</p>
+            <h6 class="text-uppercase shadow-sm">Douglas Figueroa <span class="text-active">Méndez</span></h6>
+            <p class="sub-text"><span class="text-active">Junior</span> Developer</p>
           </div>
         </div>
         
         <!--MENU RESPONSIVO-->
         <nav class="contenedor-menu ocultar shadow-lg" id="menu">
           <ul>
-            <li><a href="index.html" class="menu-link">INICIO</a></li>
-            <li><a href="#" class="menu-link">SOBRE MÍ</a></li>
-            <li><a href="#" class="menu-link">EXPERIENCIA LABORAL</a></li>
-            <li><a href="#" class="menu-link">HABILIDADES</a></li>
-            <li><a href="#" class="menu-link">GITHUB</a></li>
-            <li><a href="#" class="menu-link">CONTACTO</a></li>
+            <li><a id="home" href="#" class="menu-link">INICIO</a></li>
+            <li><a id="aboutme" href="#aboutme" class="menu-link">SOBRE MÍ</a></li>
+            <li><a id="3" href="#" class="menu-link">EXPERIENCIA LABORAL</a></li>
+            <li><a id="4" href="#" class="menu-link">HABILIDADES</a></li>
+            <li><a id="5" href="#" class="menu-link">GITHUB</a></li>
+            <li><a id="6" href="#" class="menu-link">CONTACTO</a></li>
           </ul>
-          <hr class="barra shadow">
+          <hr class="barra">
 
           <!--SOCIAL MEDIA-->
           <div class="social-content">
@@ -54,8 +55,25 @@
 
         </nav>
       </div>
-      <div class="col-md-12 col-lg-9 bg-danger sections">
-        <h1>CONTENIDO</h1>
+
+      <div class="col-md-12 col-lg-9 g-0 sections">
+        <section class="section-active" id="section-home">
+          <div class="content-section1-text">
+            <h1 class="text-uppercase">Desarrollo <span class="text-active">Web</span>/<span class="text-active"> Desktop</span></h1>
+            <p class="text-capitalize shadow-sm h6">
+              <span class="comillas">“</span>
+              programar sonrisas en los rostros de la personas<br> hasta que Dios me escriba
+              mi <span class="text-active"> return sky</span> 
+              <span class="comillas">”</span>
+          </p>
+          </div>
+        </section>
+
+        <section class="section-aboutme" id="section-aboutme">
+          <div class="content-section1-text">
+            <h1 class="text-uppercase">SECCION 2 <span class="text-active">Web</span>/<span class="text-active"> Desktop</span></h1>
+          </div>
+        </section>
       </div>
     </div>
   </div>

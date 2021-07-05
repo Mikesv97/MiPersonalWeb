@@ -6,7 +6,7 @@
 
 .container-main{
     max-width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /*****************************************************************/
@@ -27,6 +27,7 @@
 }
 
 .content-img-datos{
+    margin-top: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,8 +55,9 @@
 }
 
 .text-active{
-    color: burlywood;
-    text-shadow: 2px 0 40px black, 0px 1px 20px white;
+    color: #FFD700;
+    text-shadow: 2px 2px 30px whitesmoke;
+    
 }
 
 .sub-text{
@@ -80,13 +82,14 @@
 .contenedor-menu{
     background-color:rgba(0, 0, 0, 0.8);
     position: absolute;
-    margin-top: 27.1em;
+    margin-top: 28.1em;
     width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: 0.9s ease;
     border-radius:0 10px 10px 10px;
+    z-index: 100;
     
 }
 
@@ -112,19 +115,16 @@ a{
 }
 
 .menu-link:hover, .menu-link:focus{
-    background-color: rgb(245, 215, 177);
+    background-color: #FFD700;
     color: black;
     font-weight: bold;
     text-align: center;
     transition:  0.9s ease;
+    box-shadow: 0px 0px 5px whitesmoke;
 }
 
-.barra{
-    color: white;
-    width: 80%;
-    margin:  0 auto;
-    
-}
+
+
 
 .tittle-social{
     margin-top: 0.5em;
@@ -177,24 +177,33 @@ a{
 /*****************************************************************/
 .sections{
     min-height: 100vh;
+
+
 }
 
 
-/*.section-active{
+.section-active{
     background-image: url(../IMG/section1.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
+    max-width: 100vw;
+    min-height: 100vh;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
     
- 
     /*
     imagen creditos
     Photo by <a href="https://unsplash.com/@altumcode?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AltumCode</a> on <a href="https://unsplash.com/s/photos/developer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
     */
-/*}*/
+}
 
-/*.section-active::before{
+.section-active::before{
     content: '';
     top:0;
     bottom:0 ;
@@ -202,7 +211,60 @@ a{
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
-}*/
+    
+    
+}
+
+.content-section1-text{
+    position: absolute;
+    text-align: center;
+    width:90%;
+    height: 200px;
+    padding: 35px;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+
+
+}
+.comillas{
+    color: red;
+    font-size: 2em;
+}
+
+.section-aboutme{
+    background-image: url(../IMG/section1.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    max-width: 100vw;
+    min-height: 100vh;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    
+    /*
+    imagen creditos
+    Photo by <a href="https://unsplash.com/@altumcode?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AltumCode</a> on <a href="https://unsplash.com/s/photos/developer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    */
+}
+
+.section-aboutme::before{
+    content: '';
+    top:0;
+    bottom:0 ;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    
+    
+}
 
 
 
@@ -231,5 +293,7 @@ a{
         margin-top: 28.3em;        
     }
 
+
+    
 
 }
