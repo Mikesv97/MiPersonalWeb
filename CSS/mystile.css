@@ -9,20 +9,77 @@
     height: 100vh;
 }
 
-.sections{
-    min-height: 100vh;
+/*****************************************************************/
+                    /*CSS PARA MENU*/
+/*****************************************************************/
+.menu-content{
+    padding: 15px;
+    overflow: hidden;
+    margin: 0;
+    
 }
 
+.menu-movil-icon{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 0.6em;
+    font-size: 14px;
+}
 
+.content-img-datos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 50%;
+    margin-right: 0.6em;
+    overflow: hidden;
+    padding: 1px;
+}
 
+.img-content{
+    float: right;
+    margin-right: 0.3em;
+    margin-left: 1.2em;
+    
+}
 
+.text-content{
+    margin-left: 0.1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-right: 0.1em;
+    text-align: center;
 
+}
 
+.text-active{
+    color: burlywood;
+    text-shadow: 2px 0 40px black, 0px 1px 20px white;
+}
+
+.sub-text{
+    float: right;
+    margin-right: -0.1em;
+    margin-top: -0.3em;
+}
+
+.me-pic{
+    margin-top: -0.8em;
+    max-width: 300px;
+    max-height: 50px;
+    border: 2px solid rgb(241, 211, 171);
+    border-radius: 50px;
+    box-shadow: 0px 0 5px black, 0px 0 10px white;
+}
 
 
 /*****************************************************************/
                     /*CSS PARA SECCIONES*/
 /*****************************************************************/
+.sections{
+    min-height: 100vh;
+}
 
 
 /*.section-active{
@@ -63,6 +120,12 @@
                     /*MEDIA QUERY*/
 /*****************************************************************/
 
-@media screen and (max-width: 900px){
+@media screen and (max-width:600px){
+    .text-content{
+        margin-right: 0;
+    }
+    .sub-text{
+        float: none;
 
+    }
 }
