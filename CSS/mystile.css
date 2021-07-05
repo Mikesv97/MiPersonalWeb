@@ -1,138 +1,68 @@
 *{
-    padding: 0em;
-    margin: 0em;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
 
-.pr-3{
-
-    padding-right: 2em;
-
-}
-#aboutme    {
+.container-main{
+    max-width: 100vw;
     height: 100vh;
-    text-align: center;
-    margin-top: 50px;
+}
+
+.sections{
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+/*****************************************************************/
+                    /*CSS PARA SECCIONES*/
+/*****************************************************************/
+
+
+/*.section-active{
+    background-image: url(../IMG/section1.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
     
-}
+ 
+    /*
+    imagen creditos
+    Photo by <a href="https://unsplash.com/@altumcode?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AltumCode</a> on <a href="https://unsplash.com/s/photos/developer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    */
+/*}*/
 
-.ml-3{
-    margin-left: 3em;
-    
-}
-
-.mt-10{
-    margin-top: 6em;
-}
-.mtb-5{
-    margin-top: 3em;
-    
-}
-
-.navbar{
-    background-color: white;
-    border-bottom: 1px solid lightgray;
-    font-weight: bold;
-    position: fixed;
-    width: 100%;
-    margin-bottom: 100px;
+/*.section-active::before{
+    content: '';
+    top:0;
+    bottom:0 ;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+}*/
 
 
-}
 
 
-.hover:hover{
-    background-color:seagreen;
-    color: white !important;
-    border: 2px solid white;
-    border-radius: 40px;
-    box-shadow: 2px 1px 10px lightgray;
-    text-align: center;
-    margin-left: 0;
-    transition: .5s ease-in-out;
-    
-}
 
-.btn-header:hover,.btn-outline-light:hover{
-    background-color:seagreen;
-    color: white !important;
-    border-radius: 50px;
-    transition: .5s ease;
-    box-shadow: 2px 1px 20px lightgray;
-    text-align:center;
-    text-shadow: 2px 2px 3px black;
-    font-weight: bold;
-}
 
-.card-img-filter{
-    filter: brightness(0.7);
-}
 
-.btn-acord{
-    width: 70%;
-    border: none;
-    border-bottom: 1px solid lightgray;
-    background-color: white;
-    height: 50px;
-    font-weight: bold;
-    text-align: left;
-    padding-left: 1em;
-    overflow: hidden;
-}
 
-.btn-acord:hover{
-    width: 100%;
-    border: 2px solid white;
-    color:white;
-    background-color: black;
-    font-weight: bold;
-    box-shadow: 2px 2px 8px lightgray;
-    transition: 0.6s ease;
-    
-}
 
-.btn-acord-icon{
 
-    float: right;
-    padding-right: 1em;
-}
 
-.icon{
-    width: 24px;
-}
+/*****************************************************************/
+                    /*MEDIA QUERY*/
+/*****************************************************************/
 
-.btn-acord:focus{
-    width: 100%;
-    border: 2px solid white;
-    color:white;
-    background-color: black;
-    font-weight: bold;
-    box-shadow: 2px 2px 8px lightgray;
-    transition: 0.6s ease;
-}
+@media screen and (max-width: 900px){
 
-.content-acord{
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 1em;
-    border-top: none;
-    justify-content: center;
-    border: 1px solid silver;
-
-}
-
-.picture-me{
-    border-radius: 50%;
-    width: 100%;
-}
-
-.img-banner{
-    height: 70vh;
-    filter: brightness(0.2);
-
-}
-
-.carousel-inner{
-    width: 100% !important;
-    border: 2px solid white;
-    
 }
