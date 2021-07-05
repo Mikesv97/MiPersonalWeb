@@ -14,8 +14,8 @@
 /*****************************************************************/
 .menu-content{
     padding: 15px;
-    overflow: hidden;
     margin: 0;
+    position: relative;
     
 }
 
@@ -72,6 +72,104 @@
     border-radius: 50px;
     box-shadow: 0px 0 5px black, 0px 0 10px white;
 }
+.menu-movil-link{
+    margin-left: 1em;
+    background: none;
+    border: none;
+}
+.contenedor-menu{
+    background-color:rgba(0, 0, 0, 0.8);
+    position: absolute;
+    margin-top: 27.1em;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.9s ease;
+    border-radius:0 10px 10px 10px;
+    
+}
+
+.ocultar{
+    margin-left: -100%;
+    transition: 2s ease;
+}
+
+li,a{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin-left: -10px;
+}
+
+li{
+    margin-top: 0.8em;
+}
+
+a{
+   color: white;
+   display: block;
+}
+
+.menu-link:hover, .menu-link:focus{
+    background-color: rgb(245, 215, 177);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    transition:  0.9s ease;
+}
+
+.barra{
+    color: white;
+    width: 80%;
+    margin:  0 auto;
+    
+}
+
+.tittle-social{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.social-content{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    padding: 3px;
+}
+
+.conten-social-icon{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.social-icon{
+
+    margin-right: 10px;
+    margin-left: 1em;
+    overflow: hidden;
+    margin-bottom: 0.5em;
+
+    
+}
+
+.social-icon a{
+    text-decoration: none;
+    
+    margin: 0 auto;
+    
+}
+
+.social-icon img{
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin:0 auto;
+}
 
 
 /*****************************************************************/
@@ -120,7 +218,7 @@
                     /*MEDIA QUERY*/
 /*****************************************************************/
 
-@media screen and (max-width:600px){
+@media screen and (max-width:635px){
     .text-content{
         margin-right: 0;
     }
@@ -128,4 +226,10 @@
         float: none;
 
     }
+
+    .contenedor-menu{
+        margin-top: 28.3em;        
+    }
+
+
 }
